@@ -1,0 +1,236 @@
+.signup {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#signup1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#link1 {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+/* ///////////////////////////////// */
+.post32 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.getpost1 {
+  padding: 20px;
+  border: 3px solid #eee;
+  width: 40%;
+  border-radius: 12px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.getpost1-1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+
+  overflow: hidden;
+}
+.getpost1-1 img {
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.getpost1-2 h2 {
+  color: black;
+  font-weight: 600;
+  font-family: tahoma;
+}
+.getpost1-2 span {
+  color: grey;
+  font-size: 15px;
+}
+
+.getpost2 {
+  color: black;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+#postFile {
+  width: 500px;
+  height: 500px;
+}
+
+.postfile1 {
+  width: 100%;
+  height: 50%;
+}
+
+/* /////postSubmit///// */
+.post {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 20px;
+}
+.post1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.file {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+#textarea {
+  padding: 20px;
+  border-radius: 14px;
+  outline: none;
+}
+
+/* .shadow-dance-text {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+  animation: shadow-dance 2s infinite;
+}
+
+@keyframes shadow-dance {
+  0%, 100% {
+      text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+  }
+  50% {
+      text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
+  }
+} */
+
+/* .box {
+  display: flex;
+}
+
+.box .inner {
+  width: 400px;
+  height: 200px;
+  line-height: 200px;
+  font-size: 4em;
+  font-family: sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.box .inner:first-child {
+  background-color: indianred;
+  color: darkred;
+  transform-origin: right;
+  transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+  background-color: lightcoral;
+  color: antiquewhite;
+  transform-origin: left;
+  transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+  position: absolute;
+  animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+  animation-delay: 2.5s;
+  left: -100%;
+}
+
+@keyframes marquee {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -100%;
+  } */
+.text {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 30px;
+}
+.shadow-dance-text {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+  animation: shadow-dance 2s infinite;
+}
+
+@keyframes shadow-dance {
+  0%,
+  100% {
+    text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+  }
+  50% {
+    text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+#caption {
+  width: 30px;
+  height: 30px;
+}
+.deletePosts {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
