@@ -189,9 +189,9 @@ function App() {
       {(state?.isLogin == true) ?
         <div className="div">
           <div className="div1">
-            <Navbar bg="light" data-bs-theme="dark" className='main'>
+            <Navbar>
               {/* <Navbar.Brand href="#home">ECommerce Website</Navbar.Brand> */}
-              <Nav className="me-auto">
+              <Nav className="me-auto1">
                 {/* <img src={Image}alt="" /> */}
                   <button onClick={userLogout} id='button'>Logout</button>
               </Nav>

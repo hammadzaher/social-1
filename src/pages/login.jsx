@@ -9,7 +9,8 @@ const LoginUser1 = () => {
     const [password, setPassword] = useState("");
     ///end this///
     //login firebase///
-    const LoginUser = () => {
+    const LoginUser = (e) => {
+        e.preventDefault()
         const auth = getAuth();
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
@@ -25,22 +26,29 @@ const LoginUser1 = () => {
             });
     }
     return (
-        <div>
-            <div className="login">
-                <form id='login1' onSubmit={LoginUser}>
-                    <h2>Login</h2>
-                    <br />
-                    <TextField id="outlined-basic2" label="Email" variant="outlined" value={email} onChange={(e) => { setEmail(e?.target.value) }} />
-                    <br />
-                    <TextField id="outlined-basic3" label="Password" variant="outlined" value={password} onChange={(e) => { setPassword(e?.target.value) }} />
-                    <br />
-                    <Button variant="contained" color="primary" onClick={LoginUser}>
-                        Login
-                    </Button>
+        <>
+         <div className="container">
+                <form action="" id="form">
+                    <h1>Login</h1>
+                    
+                    <div className="input-group">
+                        <label htmlFor="email">Email</label>
+                        <input type="text" id="email" name="email" value={email} onChange={(e) => { setEmail(e?.target.value) }} />
+                        <div className="error"></div>
+                    </div>
+                    <div className="input-group">
+                        <label htmlFor="password">Password</label>
+                        <input type="password" id="password" name="password" value={password} onChange={(e) => { setPassword(e?.target.value) }} />
+                        <div className="error"></div>
+                    </div>
+                   
+                    <button type="submit" onClick={LoginUser}>Login</button>
                 </form>
             </div>
-        </div>
+        </>
     )
 }
 
 export default LoginUser1
+
+        
